@@ -1,0 +1,143 @@
+
+.header{
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+#listacaminhos{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.headericon{
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.caminholistacaminhos{
+    font-size: 30px;
+    color: blue
+    
+}
+
+.headerlogin_cadastro{
+    justify-content: center;
+}
+
+#notificainicio{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.imagelink{
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+#iconlogo{
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+
+
+/* Bagulhos da aba de utilidades abaixo */
+
+.item_icon{
+    width: 16px;
+    margin-right: 10px;
+
+}
+
+.item_text{
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+.utilit_item{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    padding: 3px;
+    height: 32px;
+    align-items: center;
+    
+
+} 
+
+.aba_utilidades{
+    background-color: grey;
+
+    height: 100vh;
+    width: 0px;
+    overflow: hidden;
+    transition: 0.6s;
+    position: absolute;
+    z-index: 3;
+
+}
+
+.escuro{
+    position: absolute;
+    width: 0px;
+    transition: 0.6s;
+    height: 100%;
+}
+.escuro_aparecendo{
+
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 2;
+}
+
+.aumentada{
+    width: 200px;
+}
+
+@media only screen and (max-width : 1050px){
+    .escuro{
+        height: 1493px;
+    }
+    .aba_utilidades{
+        height: 1493px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width : 850px){
+    .caminho_lista_caminhos{
+        font-size: 20px;
+    
+        
+    }
+}
+@media only screen and (max-width : 550px){
+    .caminho_lista_caminhos{
+        font-size: 15px;
+    
+        
+    }
+
+    #icon-logo{
+        display: none;
+    }
+}
+
+
+/* Cabo */
