@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
+import AbaUtilities from "@/components/AbaUtilities";
 import localFont from "next/font/local";
-
+import styles from "@/components/Header/Header.module.css";
+import "./globals.css"
 export const metadata = {
   title: "Titulo do site e tals",
   description: "Desdrição do site e tals",
@@ -16,9 +18,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-      <Header />
+        <Header />
+        <AbaUtilities />
+        <div className={styles.escuro}></div>
 
-        {children}
+
+
+          {children}
       </body>
     </html>
   );

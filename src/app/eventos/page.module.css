@@ -1,0 +1,293 @@
+/* Style destinado SOMENTE a tela de Eventos */
+
+.body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainteste{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.divprincipal{
+    margin-top: 5vh;
+    width: 90vw;
+    display: flex;
+}
+
+.relocaledia{
+    width: 70%;
+    height: 100%;
+
+
+}
+
+.calendario{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calendarioconteudo{
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:start;
+    font-weight: bold;
+    box-shadow: var(--cor-principal) 2px 2px 4px;
+    min-width: 560px;
+
+}
+
+.calendarioconteudo h1{
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-shadow: #3333337c 2px 2px 2px;
+    
+}
+.barrinha{
+    width: 90%;
+    height: 6%;
+    background-color: gray;
+    border-radius: 20px;
+    color: gray;
+}
+.calendariodias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+
+.dia{
+    width: 8%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: grey;
+    border-radius: 20px;
+    text-align: center;
+}
+.outromes{
+    color: rgba(128, 128, 128, 0.555);
+}
+.finalsemana{
+    background-color: green;
+}
+.diaevento{
+    background-color: var(--cor-principal);
+    cursor: pointer;
+}
+
+.relodia{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+
+.diario{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.diarioconteudo{
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:start;
+    font-weight: bold;
+    box-shadow: var(--cor-principal) 2px 2px 4px;
+    min-width: 280px;
+    min-height: 230px;
+}
+.diarioconteudo h1{
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-shadow: #3333337c 2px 2px 2px;
+    
+}
+.diarioconteudo p{
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: #3333337c 2px 2px 2px;
+
+}
+.relogio{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.eventosconteudo{
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:start;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 50px;
+    box-shadow: var(--cor-principal) 2px 2px 4px;
+    text-shadow: #3333337c 2px 2px 2px;
+    min-width: 240px;
+    min-height: 500px;
+}
+.botaoaddevento{
+    color: white;
+    background-color: rgb(65, 0, 65);
+    cursor: pointer;
+    text-decoration: underline white;
+    border-radius: 20px;
+    width: 40%;
+    text-align: center;
+    box-shadow: #333 2px 2px 2px;
+}
+
+.eventos{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.clock {
+    max-width: 220px;
+    max-height: 220px;
+    min-height: 200px;
+    min-width: 200px;
+    width: 65%;
+    height: 90%;
+    margin-top: 10px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle, #333 95%,     transparent 100%);
+    transform: rotate(90deg);
+}
+
+.clock::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.hourhand,
+.minutehand,
+.secondhand {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background: #fff;
+    top: 49%;
+    left: 0%;
+    transform-origin: 100%;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+.hourhand {
+    width: 30%;
+    height: 6px;
+    background: #fff;
+    z-index: 3;
+    left: 20% ;
+  
+ 
+ 
+}
+
+.minutehand {
+    width: 35%;
+    z-index: 2;
+    left: 15%
+}
+
+.secondhand {
+    width: 40%;
+    height: 2px;
+    background: red;
+    z-index: 1;
+    left: 10%
+}
+@media only screen and (max-width : 910px){
+    .divprincipal{
+        margin-top: 5vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .relodia{
+        flex-direction: column;
+        align-items: center;
+    }
+    .eventosconteudo{
+        min-height: 450px;
+    }
+
+    .calendario{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .relogio{
+        margin: 10px;
+    }
+    .diario{
+        margin: 10px;
+    }
+    .eventos{
+        margin: 10px;
+    }
+
+
+}
+@media only screen and (max-width : 610px){
+    .calendarioconteudo{
+        min-width: 300px;
+
+    }
+
+
+}
