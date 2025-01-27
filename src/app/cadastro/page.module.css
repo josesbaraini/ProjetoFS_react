@@ -1,0 +1,126 @@
+/* Style destinado SOMENTE a tela de Cadastro */
+
+.mainteste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+    background-color: #000;
+}
+.formulario{
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border: 2px solid #0DFF00;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px ;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#my {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: #0DFF00 6px 0 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+   letter-spacing: 5px; 
+
+}
+.pessoa{
+    background-image: url('/public/images/pessoa.png');
+    
+ }
+    
+
+
+.dois{
+    border: 2px solid #000000;
+    box-shadow: #0DFF00 0px 5px 1px;
+    border-radius: 20px;
+    background-color: rgb(190, 190, 190);
+    height: 30px;
+    background-position: 10px 0px ;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+ 
+}
+.link{
+    color: var(--cor-principal);
+}
+.link:hover{
+    color: #0DFF00;
+    text-shadow: #000000a1 1px 1px 2px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+ #cadeado{
+    background-image: url('/img/cadeado2.png');
+ }
+
+.login{
+    margin-top: 50px;
+    border-radius: 80px;
+    height: 20px;
+    width: 200px;
+    height: 30px;
+    box-shadow: #0DFF00 0px 1px 8px;
+    background-color: rgb(235, 255, 235);
+    border-radius: 100%;
+    color: #000;
+
+}
+.conta{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+
+}
+
+
+ #button-submit-div{
+    display: flex; 
+    justify-content: center;
+ }
+
+
+
+ #submit-button:hover{
+    background-color: rgba(211, 230, 211, 0.664);
+    cursor: pointer;
+
+}
+
+.label{
+    font-size: medium;
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.asterisco{
+    color: red;
+
+}
+
+#my {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: #0DFF00 6px 0 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+   letter-spacing: 5px; 
+
+}
