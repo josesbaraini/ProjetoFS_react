@@ -1,10 +1,15 @@
+'use client';
 import styles from "./page.module.css";
-
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const mudatela = () => {
+    router.push("/agenda")
+  }
+  const router = useRouter();
   return (
-    <main className={styles.mainteste}>
+    <main className={styles.mainteste} >
         <div className={styles.formulario}>
-            <form className={styles.form} action="">
+            <form className={styles.form} action="agenda">
                 <label className={styles.label} htmlFor="email">E-mail:<span className={styles.asterisco}>*</span></label>
                 <input  className={`${styles.dois} ${styles.pessoa}`} id="pessoa" type="text"  name="email"></input><br></br>
                 <label className={styles.label}  htmlFor="lname">Senha: <span className={styles.asterisco}>*</span></label>
@@ -15,10 +20,10 @@ export default function Home() {
                 <input  className={styles.dois} type="text" id="fname" name="cell"></input><br></br>
                 <label className={styles.label} htmlFor="nome">Nome do Usuário: <span className={styles.asterisco}>*</span></label>
                 <input  className={styles.dois} type="text" id="fname" name="nome"></input>
-                <div id="button-submit-div"><input id="submit-button" className={styles.login}type="submit" value="Cadastrar"></input></div>
+                <div id="button-submit-div" ><input id="submit-button" onSubmit={mudatela} className={styles.login}type="submit" value="Cadastrar"></input></div>
             </form>
             <div className={styles.conta}>
-                <p>Já tem uma conta? <a href="tela-login.html" className={styles.link}>Fazer Login</a></p>
+                <p>Já tem uma conta? <a href="login" className={styles.link}>Fazer Login</a></p>
             </div>
         </div>
        
