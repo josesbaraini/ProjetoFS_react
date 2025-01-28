@@ -37,10 +37,10 @@ export default function Home() {
                 <a href="tela-chats.html" className={styles.span}>ciclano</a>
                 <div className={styles.usericon}>👤</div>
                 </div>
-              {/* <div className={styles.suggestioncard highlighted}>
+              <div className={styles.suggestioncard} id="teste">
                 <a href="tela-chats.html"  className={styles.span}>vovô chao</a>
                 <div className={styles.usericon}>👤</div>
-                </div> */}
+                </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 
 .header{
-    background-color: var(--fundoheader);
+    background-color: var(--fundoHeader);
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -26,7 +26,7 @@
 }
 .caminholistacaminhos{
     font-size: 34px;
-    color: var(--corprincipal)
+    color: var(--corPrincipal)
     
 }
 

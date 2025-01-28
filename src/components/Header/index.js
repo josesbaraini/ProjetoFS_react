@@ -19,13 +19,13 @@ const index = () => {
             </div>
 
             <nav id={styles.listacaminhos}>
-                <a href="tela-abasocial.html">
+                <a href="abasocial">
                     <p className={styles.caminholistacaminhos}>
                         Amigos
                     </p>
                 </a>
 
-                <a href="tela-eventos.html">
+                <a href="eventos">
                     <p className={styles.caminholistacaminhos}>
                         Eventos
                     </p>
@@ -37,7 +37,7 @@ const index = () => {
                     </p>
                 </a>
 
-                <a href="tela-calendario.html">
+                <a href="calendario">
                     <p className={styles.caminholistacaminhos}>
                         Calendario
                     </p>
@@ -47,12 +47,12 @@ const index = () => {
 
             <div id={styles.notificainicio}>
 
-                <a className={styles.imagelink} href="tela-notificacoes.html">
+                <a className={styles.imagelink} href="notificacoes">
                     <Image className={styles.headericon} src="/images/icone-sino-notificacao.jpg" alt="paia" width={100} height={100}></Image>
                 </a>
 
 
-                <a className={styles.imagelink} href="tela-principal.html">
+                <a className={styles.imagelink} href="principal">
                     <Image className={styles.headericon} id={styles.iconlogo} src="/images/logo.png" alt="paia" width={100} height={100}></Image>
                 </a>
             </div>
