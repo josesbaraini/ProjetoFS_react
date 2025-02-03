@@ -1,112 +1,146 @@
+'use client'
 import styles from "./page.module.css";
+import Image from "next/image";
+
 
 export default function Home() {
+  const circun1 = ()=>{
+    let circuntr1 = document.querySelector("."+styles.trcircun1);
+    let cirifo1 = document.getElementById(styles.trcirinfo1);
+    console.log(circuntr1,"#"+styles.trcirinfo1,"."+styles.trcircun1)
+    circuntr1.classList.toggle('circuntrcima');
+    if (cirifo1.style.height == '21vh') {
+      cirifo1.style.height = '0vw'
+
+    } else {
+      cirifo1.style.height = '21vh'
+
+    };
+
+
+  }
+  const circun2 = ()=>{
+    let circuntr2 = document.querySelector("."+styles.trcircun2);
+    let cirifo2 = document.getElementById("#"+styles.trcirinfo2);
+    circuntr2.classList.toggle('circuntrcima');
+    if (cirifo2.style.height == '21vh') {
+      cirifo2.style.height = '0vw'
+
+    } else {
+      cirifo2.style.height = '21vh'
+
+    };
+
+
+  }
+
   return (
-    // <main className={"main-teste"}>
-    //     <div className={"escuro"}></div>
-    //     <section id="section-title"}><H1>Atualização/Evolução</H1></section>
-    //     <section className={"section-table" >
-    //         <div className={"div-table" id="div-table-first" >
-    //             <h1>
-    //                 Dados Corporais: Antes
-    //             </h1>
+    <main className={styles.mainteste}>
+      <section id={styles.sectiontitle}><h1>Atualização/Evolução</h1></section>
+      <section className={styles.sectiontable}>
+        <div className={styles.divtable} id={styles.divtablefirst}>
+          <h1>
+            Dados Corporais: Antes
+          </h1>
 
-    //         <table className={"table"}>
-    //             <tbody id="tbody-second" >
-    //                 <tr>
-    //                     <td>Altura:</td>
-    //                     <td>140cm</td>
-    //                 </tr>
+          <table className={styles.table}>
+            <tbody id={styles.tbodysecond}>
+              <tr>
+                <td>Altura:</td>
+                <td>140cm</td>
+              </tr>
 
-    //                 <tr>
-    //                     <td>Peso:</td>
-    //                     <td>100kg</td>
-    //                 </tr>
+              <tr>
+                <td>Peso:</td>
+                <td>100kg</td>
+              </tr>
 
-    //                 <tr >
-    //                     <td>Ombro a Ombro:</td>
-    //                     <td>40cm</td>
-    //                 </tr>
+              <tr >
+                <td>Ombro a Ombro:</td>
+                <td>40cm</td>
+              </tr>
 
-    //                 <tr className={"tr-circun-1"}>
-    //                     <td id="circun-line-1" colspan="2"}>Curcunferências</td>
-    //                 </tr>
+              <tr className={styles.trcircun1}>
+                <td onClick={()=>circun1()} id={styles.circunline1} colSpan="2">Curcunferências</td>
+              </tr>
 
-    //                 <tr id="tr-cirinfo-1" >
-    //                     <td>
-    //                         <p className={"p-cirinfo"}>Busto:  180cm</p> 
-    //                         <p className={"p-cirinfo"}>Torax: 30cm</p>
-    //                         <p className={"p-cirinfo"}>Biceps: 32cm</p>
-    //                         <p className={"p-cirinfo"}>Triceps: 34cm</p>
-    //                         <p className={"p-cirinfo"}> Cintura: 60cm</p>
-    //                     </td>
-    //                 </tr>
-    //             </tbody>
-    //         </table>
+              <tr id={styles.trcirinfo1}>
+                <td>
+                  <p className={styles.pcirinfo}>Peito:  180cm</p>
+                  <p className={styles.pcirinfo}>Torax: 30cm</p>
+                  <p className={styles.pcirinfo}>Biceps: 32cm</p>
+                  <p className={styles.pcirinfo}>Triceps: 34cm</p>
+                  <p className={styles.pcirinfo}> Cintura: 60cm</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-    //         </div>
+        </div>
 
-    //     </section>
+      </section>
 
-    //     <section className={"section-photo-winst"}>
-    //         <div className={"photo-winst-div"}>
-    //             <div className={"photo"}>
-    //                 <img className={"img-photo-winst" src="../img/Stickman.png" alt=""}>
+      <section className={styles.sectionphotowinst}>
+        <div className={styles.photowinstdiv}>
+          <div className={styles.photo}>
+            {/* <img className={styles.img-photo-winst" src="."+styles../img/Stickman.png" alt="}> */}
+            <Image className={styles.imgphotowinst} src="/images/icone-sino-notificacao.jpg" alt="paia" width={100} height={100}></Image>
 
-    //             </div>
-    //             <div className={"winst"}>
-                    
-    //                 <img className={"img-photo-winst" src="../img/academia.png" alt="" srcset=""}>
-    //                 <h1>Minha Sequência</h1>
-    //             </div>
+          </div>
+          <div className={styles.winst}>
 
-    //         </div>
-    //     </section>
+            {/* <img className={styles.img-photo-winst" src="."+styles../img/academia.png" alt="" srcset="}> */}
+            <Image className={styles.imgphotowinst} src="/images/icone-sino-notificacao.jpg" alt="paia" width={100} height={100}></Image>
+            <h1>Minha Sequência</h1>
+          </div>
 
-    //     <section className={"section-table"}>
-    //         <div className={"div-table" id="div-table-first" >
-    //             <h1>
-    //                 Dados Corporais: Depois
-    //             </h1>
+        </div>
+      </section>
 
-    //         <table className={"table"}>
-    //             <tbody id="tbody-second" >
-    //                 <tr>
-    //                     <td>Altura:</td>
-    //                     <td>140cm</td>
-    //                 </tr>
+      <section className={styles.sectiontable}>
+        <div className={styles.divtable} id={styles.divtablefirst}>
+          <h1>
+            Dados Corporais: Depois
+          </h1>
 
-    //                 <tr>
-    //                     <td>Peso:</td>
-    //                     <td>100kg</td>
-    //                 </tr>
+          <table className={styles.table}>
+            <tbody id={styles.tbodysecond}>
+              <tr>
+                <td>Altura:</td>
+                <td>140cm</td>
+              </tr>
 
-    //                 <tr >
-    //                     <td>Ombro a Ombro:</td>
-    //                     <td>40cm</td>
-    //                 </tr>
+              <tr>
+                <td>Peso:</td>
+                <td>100kg</td>
+              </tr>
 
-    //                 <tr className={"tr-circun-2"}>
-    //                     <td id="circun-line-2" colspan="2"}>Curcunferências</td>
-    //                 </tr>
+              <tr >
+                <td>Ombro a Ombro:</td>
+                <td>40cm</td>
+              </tr>
 
-    //                 <tr id="tr-cirinfo-2"}>
-    //                     <td>
-    //                         <p className={"p-cirinfo"}>Peitoral:  180cm</p> 
-    //                         <p className={"p-cirinfo"}>Torax: 30cm</p>
-    //                         <p className={"p-cirinfo"}>Braço: 32cm</p>
-    //                         <p className={"p-cirinfo"}>Abdomen: 34cm</p>
-    //                         <p className={"p-cirinfo"}> Panturilha: 60cm</p>
-    //                     </td>
-    //                 </tr>
-    //             </tbody>
-    //         </table>
+              <tr className={styles.trcircun2}>
+                <td id={styles.circunline2} onClick={()=>circun2()} colSpan="2">Curcunferências</td>
+              </tr>
 
-    //         </div>
+              <tr id={styles.trcirinfo2}>
+                <td>
+                  <p className={styles.pcirinfo}>Peitoral:  180cm</p>
+                  <p className={styles.pcirinfo}>Torax: 30cm</p>
+                  <p className={styles.pcirinfo}>Braço: 32cm</p>
+                  <p className={styles.pcirinfo}>Abdomen: 34cm</p>
+                  <p className={styles.pcirinfo}> Panturilha: 60cm</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-    //     </section>
+        </div>
+
+      </section>
 
 
-    // </main>
+    </main>
   );
 }

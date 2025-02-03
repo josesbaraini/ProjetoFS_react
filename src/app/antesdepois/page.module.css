@@ -1,0 +1,188 @@
+/* style destinado SOMENTE a tela de antes e depois */
+.body{
+    background-color: black;
+}
+.mainteste{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+#sectiontitle{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    justify-content: center;
+    color: white;
+}
+
+.sectiontable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 90vh;
+}
+
+.sectionphotowinst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    width: 15vw;
+    color: white;
+}
+
+.imgphotowinst{
+    border-radius: 100%;
+    /* border: 1px solid black; */
+}
+.photowinstdiv{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.winst{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.winst h1{
+    color: var(--corPrincipal);
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 0px 0px 7px var(--corPrincipal);
+    
+}
+
+.divtable{
+    color: white;
+    border: solid var(--corPrincipal) 2px;
+    height: 60vh;
+    width: 30vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 25px;
+    min-width: 320px;
+}   
+
+.table{
+    height: 55vh;
+
+
+}
+.table tr td{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table tr{
+    align-items: center;
+    border: solid var(--corPrincipal) 2px;
+    display: flex;
+    justify-content: space-between;
+    height: 10.5vh;
+    
+    margin: 1px;
+    width: 28vw;
+    overflow: hidden;
+    transition: 0.6s;
+    min-width: 280px;
+
+
+}
+
+#tbodysecond{
+    position: relative;
+}
+
+.trcircun1 ,.trcircun2{
+    position: absolute; 
+    top: calc(32.75vh + 4.5px);
+    transition: 0.5s;
+    background-color: black;
+}
+
+#trcirinfo1, #trcirinfo2{
+    height: 0px;
+    overflow: hidden;
+    justify-content: start;
+    align-items: initial;
+    font-size: 15px;
+}
+
+.circuntrcima{
+    top: calc(22.25vh + 3px);
+}
+#circunline1, #circunline2{
+    cursor: pointer;
+}
+
+.pcirinfo{
+    margin: 5px;
+}
+
+@media only screen and (max-width : 550px){
+    #sectiontitle{
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width : 1050px){
+    .mainteste{
+        flex-direction: column;
+        align-items: center;
+    }
+    .table tr{
+        width: 60vw;
+    }
+    .sectiontable{
+        width: 70vw;
+    }
+    .divtable{
+        width: 65vw;
+    }
+
+    .sectionphotowinst{
+        height: 50vh;
+        width: 40vw;
+        justify-content: flex-end;
+        
+        
+        
+    }
+    .photo, .winst{
+        margin: 10px;
+    }
+    .photowinstdiv{
+        justify-content: space-around;
+        width: 40vw;
+        
+    }
+    
+
+}
+

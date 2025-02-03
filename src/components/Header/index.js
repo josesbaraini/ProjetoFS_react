@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./Header.module.css";
 
 const index = () => {
-
+    
     const apareceUtilits = ()=>{
         let altura = document.querySelector("."+styles.abautilidades)
         let escuro = document.querySelector("."+styles.escuro)

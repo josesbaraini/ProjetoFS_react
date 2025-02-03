@@ -1,9 +1,10 @@
+'use client'
 import styles from "./page.module.css";
 import Image from "next/image";
 export default function Home() {
   return (
-  <body className={styles.body}>
-    <main className={styles.mainteste}>
+  <body className={styles.body} >
+    <main className={styles.mainteste} id='a'>
 
 
       <div className={styles.textoprincipal}>
