@@ -1,0 +1,63 @@
+.main{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+}
+.calendario{
+    height: 20vw;
+}
+
+.calendarioconteudo{
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:start;
+    font-weight: bold;
+    box-shadow: var(--corPrincipal) 2px 2px 4px;
+    min-width: 560px;
+
+}
+
+.calendarioconteudo h1{
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-shadow: #3333337c 2px 2px 2px;
+    
+}
+.barrinha{
+    width: 90%;
+    height: 6%;
+    background-color: gray;
+    border-radius: 20px;
+    color: gray;
+}
+.calendariodias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+
+.dia{
+    width: 8%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: grey;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.finalsemana{
+    background-color: green;
+}
+.diaevento{
+    background-color: var(--corPrincipal);
+    cursor: pointer;
+}
