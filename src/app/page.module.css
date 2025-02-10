@@ -3,7 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
 }
 
 .textoprincipal {
@@ -38,9 +41,4 @@
 .logoacademia {
     display: flex;
     justify-content: start;
-}
-.body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
 }

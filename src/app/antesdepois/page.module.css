@@ -120,7 +120,7 @@
 
 .trcircun1 ,.trcircun2{
     position: absolute; 
-    top: calc(32.75vh + 4.5px);
+    top: calc(32vh);
     transition: 0.5s;
     background-color: black;
 }
@@ -134,7 +134,7 @@
 }
 
 .circuntrcima{
-    top: calc(22.25vh + 3px);
+    top: 21.1vh;
 }
 #circunline1, #circunline2{
     cursor: pointer;

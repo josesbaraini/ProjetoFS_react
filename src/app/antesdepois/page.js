@@ -8,7 +8,7 @@ export default function Home() {
     let circuntr1 = document.querySelector("."+styles.trcircun1);
     let cirifo1 = document.getElementById(styles.trcirinfo1);
     console.log(circuntr1,"#"+styles.trcirinfo1,"."+styles.trcircun1)
-    circuntr1.classList.toggle('circuntrcima');
+    circuntr1.classList.toggle(styles.circuntrcima);
     if (cirifo1.style.height == '21vh') {
       cirifo1.style.height = '0vw'
 
@@ -21,8 +21,8 @@ export default function Home() {
   }
   const circun2 = ()=>{
     let circuntr2 = document.querySelector("."+styles.trcircun2);
-    let cirifo2 = document.getElementById("#"+styles.trcirinfo2);
-    circuntr2.classList.toggle('circuntrcima');
+    let cirifo2 = document.getElementById(styles.trcirinfo2);
+    circuntr2.classList.toggle(styles.circuntrcima);
     if (cirifo2.style.height == '21vh') {
       cirifo2.style.height = '0vw'
 

@@ -214,8 +214,8 @@
     width: 2px;
     background-color: #00ff00;  /* Cor da borda */
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 10vh;
+    height: 100vh;
     left: 50%;
     transform: translateX(-50%);
 }

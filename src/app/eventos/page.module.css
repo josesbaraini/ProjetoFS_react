@@ -3,7 +3,6 @@
 .body{
     background-color: black;
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -34,6 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -47,7 +47,7 @@
     flex-direction: column;
     justify-content:start;
     font-weight: bold;
-    box-shadow: var(--cor-principal) 2px 2px 4px;
+    box-shadow: var(--corPrincipal) 2px 2px 4px;
     min-width: 560px;
 
 }
@@ -90,7 +90,7 @@
     background-color: green;
 }
 .diaevento{
-    background-color: var(--cor-principal);
+    background-color: var(--corPrincipal);
     cursor: pointer;
 }
 
@@ -120,7 +120,7 @@
     flex-direction: column;
     justify-content:start;
     font-weight: bold;
-    box-shadow: var(--cor-principal) 2px 2px 4px;
+    box-shadow: var(--corPrincipal) 2px 2px 4px;
     min-width: 280px;
     min-height: 230px;
 }
@@ -159,7 +159,7 @@
     text-decoration: underline;
     font-weight: bold;
     line-height: 50px;
-    box-shadow: var(--cor-principal) 2px 2px 4px;
+    box-shadow: var(--corPrincipal) 2px 2px 4px;
     text-shadow: #3333337c 2px 2px 2px;
     min-width: 240px;
     min-height: 500px;

@@ -1,6 +1,32 @@
+'use client'
+import { useEffect } from "react";
 import styles from "./page.module.css";
-
 export default function Home() {
+
+  function updateClock() {
+    const now = new Date();
+    const hour = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    let hourhand = document.querySelector('.'+styles.hourhand)
+    let minhand = document.querySelector('.'+styles.minutehand)
+    let sechand = document.querySelector('.'+styles.secondhand)
+    
+
+    const hourDeg = (hour % 12) * 30 + minutes * 0.5; // 30° per hour + 0.5° per minute
+    const minuteDeg = minutes * 6; // 6° per minute
+    const secondDeg = seconds * 6; // 6° per second
+
+    hourhand.style.transform = `rotate(${hourDeg}deg)`;
+    minhand.style.transform = `rotate(${minuteDeg}deg)`;
+    sechand.style.transform = `rotate(${secondDeg}deg)`;
+}
+useEffect(()=>{
+  setInterval(updateClock, 1000);
+  updateClock()
+},[]);
+// Atualizar o relógio a cada segundo
+
   return (
     <div className={styles.body}>
       <main className={styles.mainteste}>
