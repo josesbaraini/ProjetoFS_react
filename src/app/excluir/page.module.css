@@ -1,0 +1,45 @@
+.body{
+    background-color: black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.vermelho ,.azul {
+    height: 90vh;
+    width: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    
+    
+}
+.excluir{
+    color: rgb(255, 255, 255);
+    height: 20px;
+    margin-bottom: 90px;
+    margin-top: 20px;
+}
+.buttonMedic{
+    background-color:#0DFF00;
+    color:rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    
+    
+
+  }
+.border{
+    border: #0DFF00 solid 2px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
