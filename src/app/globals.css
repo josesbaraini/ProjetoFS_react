@@ -7,8 +7,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
-    --foreground: #000000;
+    --background: #171717;
+    --foreground: #ffffff;
     --fundoHeader: rgb(77, 77, 77);
     --corPrincipal: rgb(0, 224, 0);
   }
