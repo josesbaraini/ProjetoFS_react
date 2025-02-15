@@ -1,0 +1,44 @@
+.principal{
+    display: flex;
+    height: 90vh;
+    padding: 30px;
+}
+
+
+
+.painel{
+    border: 4px white solid;
+    background-color: var(--fundoHeader);
+    font-size: xx-large;
+    padding: 20px;
+}
+
+.painel h1{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.excluirMaq{
+    border: 3px solid var(--corPrincipal);
+    border-radius: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+.excluirMaq button{
+    border: 3px solid black;
+    width: 30%;
+    background-color:black ;
+    cursor: pointer;
+}
+
+.botoes{
+    width: 100%;
+}
+
+.botoes:last-child{
+    color: red;
+}

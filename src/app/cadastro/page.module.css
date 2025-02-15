@@ -41,7 +41,7 @@
 
 .dois{
     border: 2px solid #000000;
-    box-shadow: #0DFF00 0px 5px 1px;
+    box-shadow: var(--corPrincipal) 0px 5px 1px;
     border-radius: 20px;
     background-color: rgb(190, 190, 190);
     height: 30px;
