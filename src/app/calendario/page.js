@@ -10,7 +10,7 @@ export default function Home() {
         <h1 className={styles.h1ano}>2024</h1>
         <div className={styles.calendarioconteudo}>
           <div className={styles.titulocoisas}>
-          <Image className={styles.imgphotowinst} src="/images/setadi.png" alt="paia" width={50} height={50}></Image><h1 className={styles.mestitulo}>Setembro</h1><Image className={styles.imgphotowinst} src="/images/setaes.png" alt="paia" width={50} height={50}></Image>
+          <Image className={styles.imgset} src="/images/setadi.png" alt="paia" width={50} height={50}></Image><h1 className={styles.mestitulo}>Setembro</h1><Image className={styles.imgset} src="/images/setaes.png" alt="paia" width={50} height={50}></Image>
           </div>
           <div className={styles.barrinha}> .</div>
           <div className={styles.calendariodias}>
@@ -56,44 +56,49 @@ export default function Home() {
 
       </div>
       <div className={styles.diaDaSemana}>
-      <h1>
-                Treino de Hoje
-            </h1>
+      <h1>Treino de Hoje</h1>
+      <h2>2</h2>
 
         <table className={styles.table}>
             <tbody>
                 <tr>
-                    <td className={styles.coiso}>Máquina X</td>
+                    <td className={styles.coiso}>Máquina X:</td>
                     <td className={styles.coiso}>Musculos X</td>
                 </tr>
 
                 <tr>
-                    <td className={styles.coiso}>Máquina Z</td>
+                    <td className={styles.coiso}>Máquina Z:</td>
                     <td className={styles.coiso}>Musculos Z</td>
                 </tr>
 
                 <tr>
-                    <td>Máquina Y</td>
+                    <td>Máquina Y:</td>
                     <td>Musculos Y</td>
                 </tr>
 
                 <tr>
-                    <td>Máquina W</td>
+                    <td>Máquina W:</td>
                     <td>Musculos W</td>
                 </tr>
 
                 <tr>
-                    <td>Máquina P</td>
+                    <td>Máquina P:</td>
                     <td>Musculos P</td>
                 </tr>
-                <tr id="trespontos">
-                    <td id="trespontos" colSpan="2">...</td>
+                <tr >
+                    <td id={styles.trespontos} colSpan="2">...</td>
 
                 </tr>
 
             </tbody>
+            
         </table>
+        <div className={styles.titulocoisas}>
+          <Image className={styles.imgset} src="/images/setadi.png" alt="paia" width={50} height={50}></Image><Image className={styles.imgset} src="/images/setaes.png" alt="paia" width={50} height={50}></Image>
+          </div>
+        
       </div>
+      
 
 
     </div>
