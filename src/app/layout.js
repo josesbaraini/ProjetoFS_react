@@ -3,6 +3,7 @@ import AbaUtilities from "@/components/AbaUtilities";
 import localFont from "next/font/local";
 import styles from "@/components/Header/Header.module.css";
 import "./globals.css"
+import { AuthProvider } from "@/context/AuthContext";
 export const metadata = {
   title: "Titulo do site e tals",
   description: "Desdrição do site e tals",
@@ -17,14 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >
-        <Header />
-        <AbaUtilities />
-        <div className={styles.escuro}></div>
-
-
-
+      <body>
+        <AuthProvider>
+          <Header />
+          <AbaUtilities />
+          <div className={styles.escuro}></div>
           {children}
+        </AuthProvider>
       </body>
     </html>
   );

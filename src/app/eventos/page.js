@@ -1,8 +1,21 @@
 'use client'
-import { useEffect } from "react";
 import styles from "./page.module.css";
-export default function Home() {
+import { useAutenticacao } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
+export default function Home() {
+  const { usuarioId, fazerLogout } = useAutenticacao();
+  const roteador = useRouter();
+
+  useEffect(() => {
+    console.log(usuarioId)
+      if (!usuarioId) {
+          roteador.push("/login"); // 🔥 Redireciona caso não esteja logado
+      }
+  }, [usuarioId]);
+
+  if (!usuarioId) return <p>Redirecionando...</p>;
   function updateClock() {
     const now = new Date();
     const hour = now.getHours();
