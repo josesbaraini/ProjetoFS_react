@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     console.log(usuarioId)
       if (!usuarioId) {
-          roteador.push("/login"); // 🔥 Redireciona caso não esteja logado
+          roteador.push("/login"); 
       }
   }, [usuarioId]);
 
@@ -26,9 +26,9 @@ export default function Home() {
     let sechand = document.querySelector('.'+styles.secondhand)
     
 
-    const hourDeg = (hour % 12) * 30 + minutes * 0.5; // 30° per hour + 0.5° per minute
-    const minuteDeg = minutes * 6; // 6° per minute
-    const secondDeg = seconds * 6; // 6° per second
+    const hourDeg = (hour % 12) * 30 + minutes * 0.5; 
+    const minuteDeg = minutes * 6;
+    const secondDeg = seconds * 6; 
 
     hourhand.style.transform = `rotate(${hourDeg}deg)`;
     minhand.style.transform = `rotate(${minuteDeg}deg)`;

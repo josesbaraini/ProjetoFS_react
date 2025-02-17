@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
   <body className={styles.body}  >
-    <main className={styles.mainteste} id='a'>
+    <main className={styles.mainteste}>
 
 
       <div className={styles.textoprincipal}>

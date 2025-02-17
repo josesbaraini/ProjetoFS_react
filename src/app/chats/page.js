@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     console.log(usuarioId)
       if (!usuarioId) {
-          roteador.push("/login"); // 🔥 Redireciona caso não esteja logado
+          roteador.push("/login");
       }
   }, [usuarioId]);
 

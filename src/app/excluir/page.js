@@ -1,3 +1,4 @@
+"use client"
 import styles from "./page.module.css";
 import Image from "next/image";
 import { useAutenticacao } from "@/context/AuthContext";
@@ -11,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     console.log(usuarioId)
       if (!usuarioId) {
-          roteador.push("/login"); // 🔥 Redireciona caso não esteja logado
+          roteador.push("/login"); 
       }
   }, [usuarioId]);
 
