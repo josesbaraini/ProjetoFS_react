@@ -61,7 +61,7 @@ const index = () => {
                     </p>
                 </a>
 
-                <a href="tela-updtreinos.html">
+                <a href="principal">
                     <p className={styles.caminholistacaminhos}>
                         Treinos
                     </p>

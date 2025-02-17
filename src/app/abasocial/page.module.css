@@ -10,17 +10,6 @@
     overflow-x: hidden;
 }
 
-.header {
-    background-color: var(--var-cor-fundo-header);
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
 
 #listacaminhos {
     display: flex;
@@ -39,7 +28,7 @@
 
 .caminholistacaminhos {
     font-size: 2.5vw;
-    color: var(--corPincipal);
+    color: var(--corPrincipal);
 }
 
 #notificainicio {
@@ -84,7 +73,7 @@
     border-radius: 15px;
     width: 80%;
     max-width: 300px;
-    box-shadow: 0px 0px 10px var(--corPincipal);
+    box-shadow: 0px 0px 10px var(--corPrincipal);
     margin-bottom: 20px;
 }
 
@@ -109,7 +98,7 @@
     bottom: 20px;
     right: 20px;
     background-color: #ccc;
-    color:var(--corPincipal);
+    color:var(--corPrincipal);
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -130,7 +119,7 @@
     border-radius: 15px;
     width: 80%;
     max-width: 300px;
-    box-shadow: 0px 0px 10px var(--corPincipal);
+    box-shadow: 0px 0px 10px var(--corPrincipal);
     color: #000000;
     font-size: 16px;
     margin-bottom: 20px;
@@ -162,7 +151,7 @@
     color: #000;
     font-size: 14px;
     text-align: center;
-    box-shadow: 0px 0px 10px var(--corPincipal);
+    box-shadow: 0px 0px 10px var(--corPrincipal);
 }
 
 .suggestioncard {
@@ -174,7 +163,7 @@
     max-width: 300px;
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px var(--corPincipal);
+    box-shadow: 0px 0px 10px var(--corPrincipal);
     font-size: 14px;
     color: #000;
 }
@@ -214,7 +203,7 @@
 .container::before {
     content: "";
     width: 2px;
-    background-color: var(--corPincipal);
+    background-color: var(--corPrincipal);
     /* Cor da borda */
     position: absolute;
     top: 10vh;
