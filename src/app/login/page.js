@@ -3,15 +3,22 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import { useAutenticacao } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
-
+import { useEffect,useState } from "react";
 
 export default function Home() {
+  const { usuarioId, fazerLogout } = useAutenticacao();
+  const roteador = useRouter();
+
+  useEffect(() => {
+    console.log(usuarioId)
+      if (usuarioId) {
+          roteador.push("/principal");
+      }
+  }, [usuarioId]);
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
   const { fazerLogin } = useAutenticacao();
-  const roteador = useRouter();
 
 
 

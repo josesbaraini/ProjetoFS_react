@@ -1,7 +1,19 @@
 'use client';
 import styles from "./page.module.css";
+import { useAutenticacao } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { useEffect,useState } from "react";
+
 export default function Home() {
+  const { usuarioId, fazerLogout } = useAutenticacao();
+  const roteador = useRouter();
+
+  useEffect(() => {
+    console.log(usuarioId)
+      if (usuarioId) {
+          roteador.push("/principal");
+      }
+  }, [usuarioId]);
   const mudatela = () => {
     router.push("/agenda")
   }
