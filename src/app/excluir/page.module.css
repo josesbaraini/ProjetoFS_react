@@ -17,11 +17,15 @@
     
 }
 .excluir{
+    font-size:20px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     height: 20px;
     margin-bottom: 90px;
     margin-top: 20px;
     padding: 15px
+
+
 }
 .buttonMedic{
     background-color:#0DFF00;
@@ -30,9 +34,9 @@
     padding: 10px 20px;
     margin-bottom: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size:20px ;
     border-radius: 2px;
-    width: 500px;
+    width: 400px;
     
     
 
@@ -63,6 +67,7 @@ border-radius: 25px;
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 90px;
+    font-size: 20px;
 }
 .botao{
     justify-content: space-between;
