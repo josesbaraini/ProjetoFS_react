@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect,useState } from "react";
 
 export default function Home() {
-  const { usuarioId, fazerLogout } = useAutenticacao();
+  const { usuarioId, fazerLogin } = useAutenticacao();
   const roteador = useRouter();
 
   useEffect(() => {
@@ -18,15 +18,15 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
-  const { fazerLogin } = useAutenticacao();
 
 
 
-  async function enviarFormulario(evento) { // Envia os dados para a API
+
+  async function enviarFormulario(evento) {
     evento.preventDefault();
 
     try {
-        const resposta = await fetch("http://localhost:8000/api/user/login", {
+        const resposta = await fetch("https://projetofs-apis.onrender.com/api/user/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, senha })
@@ -36,8 +36,8 @@ export default function Home() {
         if (!resposta.ok) throw new Error(dados.erro);
         console.log(dados)
 
-        fazerLogin(dados.id); // Armazena o ID do usuário
-        roteador.push("/principal"); // Redireciona para página protegida
+        fazerLogin(dados.id);
+        roteador.push("/principal"); 
     } catch (erro) {
         setErro(erro.message);
     }

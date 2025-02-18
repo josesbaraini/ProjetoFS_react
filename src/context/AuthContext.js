@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 const AuthContext = createContext();
 
-export function AuthProvider({ children }) {  // 🔥 Nome corrigido e children entre {}
+export function AuthProvider({ children }) { 
     const [usuarioId, setUsuarioId] = useState(null);
     const [carregando, setCarregando] = useState(true);
     const roteador = useRouter();
@@ -27,7 +27,7 @@ export function AuthProvider({ children }) {  // 🔥 Nome corrigido e children 
         setUsuarioId(null);
         roteador.push("/login");
     }
-    if (carregando) return null; // 🔥 Evita piscar tela em páginas protegidas
+    if (carregando) return null;
     return (
         <AuthContext.Provider value={{ usuarioId, fazerLogin, fazerLogout }}>
             {children}
