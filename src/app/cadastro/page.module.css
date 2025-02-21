@@ -52,7 +52,7 @@
  
 }
 .link{
-    color: var(--cor-principal);
+    color: var(--corPrincipal);
 }
 .link:hover{
     color: #0DFF00;
@@ -67,18 +67,23 @@
     background-image: url('/img/cadeado2.png');
  }
 
-.login{
+
+
+#submitbutton{
     margin-top: 50px;
-    border-radius: 80px;
-    height: 20px;
+    border: #000 solid 1px;
     width: 200px;
+    color: black;
     height: 30px;
-    box-shadow: #0DFF00 0px 1px 8px;
     background-color: rgb(235, 255, 235);
     border-radius: 100%;
-    color: #000;
+    cursor: pointer;
+ }
+ #submitbutton:hover{
+    background-color: rgba(214, 255, 217, 0.973);
+    border: #0e0e0e solid 1px;
 
-}
+ }
 .conta{
     font-size: 15px;
     display: flex;

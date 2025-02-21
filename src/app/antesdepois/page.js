@@ -1,6 +1,7 @@
 'use client'
 import styles from "./page.module.css";
 import Image from "next/image";
+import TabelaDados from "@/components/TabelaDados";
 
 import { useAutenticacao } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
@@ -18,21 +19,7 @@ export default function Home() {
   }, [usuarioId]);
 
   if (!usuarioId) return <p>Redirecionando...</p>;
-  const circun1 = ()=>{
-    let circuntr1 = document.querySelector("."+styles.trcircun1);
-    let cirifo1 = document.getElementById(styles.trcirinfo1);
-    console.log(circuntr1,"#"+styles.trcirinfo1,"."+styles.trcircun1)
-    circuntr1.classList.toggle(styles.circuntrcima);
-    if (cirifo1.style.height == '21vh') {
-      cirifo1.style.height = '0vw'
-
-    } else {
-      cirifo1.style.height = '21vh'
-
-    };
-
-
-  }
+  
   const circun2 = ()=>{
     let circuntr2 = document.querySelector("."+styles.trcircun2);
     let cirifo2 = document.getElementById(styles.trcirinfo2);
@@ -52,7 +39,18 @@ export default function Home() {
     <main className={styles.mainteste}>
       <section id={styles.sectiontitle}><h1>Atualização/Evolução</h1></section>
       <section className={styles.sectiontable}>
-        <div className={styles.divtable} id={styles.divtablefirst}>
+        <TabelaDados
+        titulo='Dados Corporais: Antes'
+        altura='140'
+        peso='100'
+        OmbroaOmbro='199'
+        peito='100'
+        torax='100'
+        biceps='100'
+        triceps='100'
+        cintura='100'
+        ></TabelaDados>
+        {/* <div className={styles.divtable} id={styles.divtablefirst}>
           <h1>
             Dados Corporais: Antes
           </h1>
@@ -90,7 +88,7 @@ export default function Home() {
             </tbody>
           </table>
 
-        </div>
+        </div> */}
 
       </section>
 

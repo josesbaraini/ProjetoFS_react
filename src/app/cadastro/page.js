@@ -32,7 +32,7 @@ export default function Home() {
                 <input  className={styles.dois} type="text" id="fname" name="cell"></input><br></br>
                 <label className={styles.label} htmlFor="nome">Nome do Usuário: <span className={styles.asterisco}>*</span></label>
                 <input  className={styles.dois} type="text" id="fname" name="nome"></input>
-                <div id="button-submit-div" ><input id="submit-button" onSubmit={mudatela} className={styles.login}type="submit" value="Cadastrar"></input></div>
+                <div id="button-submit-div" ><input id={styles.submitbutton} onSubmit={mudatela} className={styles.login}type="submit" value="Cadastrar"></input></div>
             </form>
             <div className={styles.conta}>
                 <p>Já tem uma conta? <a href="login" className={styles.link}>Fazer Login</a></p>
