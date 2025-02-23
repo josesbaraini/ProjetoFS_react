@@ -9,7 +9,6 @@ export default function Home() {
   const roteador = useRouter();
 
   useEffect(() => {
-    console.log(usuarioId)
       if (!usuarioId) {
           roteador.push("/login");
       }

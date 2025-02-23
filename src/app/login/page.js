@@ -10,7 +10,6 @@ export default function Home() {
   const roteador = useRouter();
 
   useEffect(() => {
-    console.log(usuarioId)
       if (usuarioId) {
           roteador.push("/principal");
       }
@@ -18,7 +17,8 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
-
+  const [msgEmail, setMsgEmail] = useState(<br></br>)
+  const [msgSenha, setMsgSenha] = useState()
 
 
 
@@ -33,13 +33,23 @@ export default function Home() {
         });
 
         const dados = await resposta.json();
-        if (!resposta.ok) throw new Error(dados.erro);
-        console.log(dados)
+        if (!resposta.ok){
+          if (dados.error === 'usuario não encontrado') {
+            setMsgSenha()
+            setMsgEmail(<p className={styles.testofalha}>Usuario Invalido</p>)
+            
+          } else if(dados.error === 'senha incorreta'){
+            setMsgEmail(<br></br>)
+            setMsgSenha(<p className={styles.testofalha}>Senha Incorreta</p>)
+          }
+          throw new Error(dados.erro);
+        }
+        
 
         fazerLogin(dados.id);
         roteador.push("/principal"); 
     } catch (erro) {
-        setErro(erro.message);
+
     }
 }
 
@@ -53,12 +63,15 @@ export default function Home() {
             <label className={styles.label} htmlFor="fname">E-mail: <span className={styles.asterisco}>*</span></label>
             <input placeholder="Email" 
                     value={email} 
-                    onChange={(e) => setEmail(e.target.value)} className={styles.dois} id="pessoa" type="email" name="fname"></input><br></br>
+                    onChange={(e) => setEmail(e.target.value)} className={styles.dois} id="pessoa" type="email" name="fname"></input>
+            {msgEmail}
             <label className={styles.label} htmlFor="lname">Senha: <span className={styles.asterisco}>*</span></label>
+            
             <input className={styles.dois} id="cadeado" type="password" 
                     placeholder="Senha" 
                     value={senha} 
                     onChange={(e) => setSenha(e.target.value)} name="lname"></input>
+                    {msgSenha}
             <div id="button-submit-div" ><input id={styles.submitbutton} className={styles.login} type="submit" value="Login" ></input></div>
           </form>
           <div className={styles.conta}>
