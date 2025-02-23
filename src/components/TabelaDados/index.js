@@ -1,23 +1,39 @@
 'use client'
+import { useState } from "react";
 import styles from "./TabelaDados.module.css";
 
 
 export default function Card(props) {
-    const circun1 = ()=>{
-        let circuntr1 = document.querySelector("."+styles.trcircun1);
-        let cirifo1 = document.getElementById(styles.trcirinfo1);
-        console.log(circuntr1,"#"+styles.trcirinfo1,"."+styles.trcircun1)
-        circuntr1.classList.toggle(styles.circuntrcima);
-        if (cirifo1.style.height == '21vh') {
-          cirifo1.style.height = '0vw'
-    
+    const [classeTr, setTr] = useState(styles.trcircun1)
+    const [classeCirInfo, setClasseCirInfo]  = useState(`${styles.trcirinfo1} ${styles.trcirinfo}`)
+    const circuntr1 = <tr className={classeTr}>
+        <td onClick={() => circun1()} id={styles.circunline1} colSpan="2">Curcunferências</td>
+    </tr>
+    const cirinfo =
+        <tr id={classeCirInfo}>
+            <td>
+                <p className={styles.pcirinfo}>Peito:  {props.peito}cm</p>
+                <p className={styles.pcirinfo}>Torax: {props.torax}cm</p>
+                <p className={styles.pcirinfo}>Biceps: {props.biceps}cm</p>
+                <p className={styles.pcirinfo}>Triceps: {props.triceps}cm</p>
+                <p className={styles.pcirinfo}> Cintura: {props.cintura}cm</p>
+            </td>
+        </tr>
+    const circun1 = () => {
+
+
+        console.log(circuntr1, "." + styles.trcircun1, "." + styles.trcircun2)
+        if (circuntr1.props.className == styles.trcircun1) {
+            setTr(`${styles.trcircun1} ${styles.circuntrcima}`)
+            setClasseCirInfo(styles.trcirinfo1)
         } else {
-          cirifo1.style.height = '21vh'
-    
-        };
-    
-    
-      }
+            setClasseCirInfo(`${styles.trcirinfo1} ${styles.trcirinfo}`)
+            setTr(styles.trcircun1)
+        }
+ 
+
+
+    }
     return (
 
         <div className={styles.divtable} id={styles.divtablefirst}>
@@ -42,19 +58,9 @@ export default function Card(props) {
                         <td>{props.OmbroaOmbro}cm</td>
                     </tr>
 
-                    <tr className={styles.trcircun1}>
-                        <td onClick={() => circun1()} id={styles.circunline1} colSpan="2">Curcunferências</td>
-                    </tr>
+                    {circuntr1}
 
-                    <tr id={styles.trcirinfo1}>
-                        <td>
-                            <p className={styles.pcirinfo}>Peito:  {props.peito}cm</p>
-                            <p className={styles.pcirinfo}>Torax: {props.torax}cm</p>
-                            <p className={styles.pcirinfo}>Biceps: {props.biceps}cm</p>
-                            <p className={styles.pcirinfo}>Triceps: {props.triceps}cm</p>
-                            <p className={styles.pcirinfo}> Cintura: {props.cintura}cm</p>
-                        </td>
-                    </tr>
+                    {cirinfo}
                 </tbody>
             </table>
 

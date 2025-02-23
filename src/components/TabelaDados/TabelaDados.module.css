@@ -126,12 +126,13 @@
 }
 
 #trcirinfo1, #trcirinfo2{
-    height: 0px;
-    overflow: hidden;
+    height: 16vw;
+
     justify-content: start;
     align-items: initial;
     font-size: 15px;
 }
+
 
 .circuntrcima{
     top: 21.1vh;

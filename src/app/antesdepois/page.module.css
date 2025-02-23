@@ -118,31 +118,8 @@
     position: relative;
 }
 
-.trcircun1 ,.trcircun2{
-    position: absolute; 
-    top: calc(32vh);
-    transition: 0.5s;
-    background-color: black;
-}
 
-#trcirinfo1, #trcirinfo2{
-    height: 0px;
-    overflow: hidden;
-    justify-content: start;
-    align-items: initial;
-    font-size: 15px;
-}
 
-.circuntrcima{
-    top: 21.1vh;
-}
-#circunline1, #circunline2{
-    cursor: pointer;
-}
-
-.pcirinfo{
-    margin: 5px;
-}
 
 @media only screen and (max-width : 550px){
     #sectiontitle{

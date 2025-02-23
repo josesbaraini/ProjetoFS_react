@@ -19,22 +19,6 @@ export default function Home() {
   }, [usuarioId]);
 
   if (!usuarioId) return <p>Redirecionando...</p>;
-  
-  const circun2 = ()=>{
-    let circuntr2 = document.querySelector("."+styles.trcircun2);
-    let cirifo2 = document.getElementById(styles.trcirinfo2);
-    circuntr2.classList.toggle(styles.circuntrcima);
-    if (cirifo2.style.height == '21vh') {
-      cirifo2.style.height = '0vw'
-
-    } else {
-      cirifo2.style.height = '21vh'
-
-    };
-
-
-  }
-
   return (
     <main className={styles.mainteste}>
       <section id={styles.sectiontitle}><h1>Atualização/Evolução</h1></section>
@@ -50,6 +34,7 @@ export default function Home() {
         triceps='100'
         cintura='100'
         ></TabelaDados>
+
         {/* <div className={styles.divtable} id={styles.divtablefirst}>
           <h1>
             Dados Corporais: Antes
@@ -110,45 +95,17 @@ export default function Home() {
       </section>
 
       <section className={styles.sectiontable}>
-        <div className={styles.divtable} id={styles.divtablefirst}>
-          <h1>
-            Dados Corporais: Depois
-          </h1>
-
-          <table className={styles.table}>
-            <tbody id={styles.tbodysecond}>
-              <tr>
-                <td>Altura:</td>
-                <td>140cm</td>
-              </tr>
-
-              <tr>
-                <td>Peso:</td>
-                <td>100kg</td>
-              </tr>
-
-              <tr >
-                <td>Ombro a Ombro:</td>
-                <td>40cm</td>
-              </tr>
-
-              <tr className={styles.trcircun2}>
-                <td id={styles.circunline2} onClick={()=>circun2()} colSpan="2">Curcunferências</td>
-              </tr>
-
-              <tr id={styles.trcirinfo2}>
-                <td>
-                  <p className={styles.pcirinfo}>Peitoral:  180cm</p>
-                  <p className={styles.pcirinfo}>Torax: 30cm</p>
-                  <p className={styles.pcirinfo}>Braço: 32cm</p>
-                  <p className={styles.pcirinfo}>Abdomen: 34cm</p>
-                  <p className={styles.pcirinfo}> Panturilha: 60cm</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-        </div>
+      <TabelaDados
+        titulo='Dados Corporais: Depois'
+        altura='140'
+        peso='100'
+        OmbroaOmbro='199'
+        peito='100'
+        torax='100'
+        biceps='100'
+        triceps='100'
+        cintura='100'
+        ></TabelaDados>
 
       </section>
 
