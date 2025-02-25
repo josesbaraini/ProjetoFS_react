@@ -49,11 +49,7 @@ const index = () => {
             </div>
 
             <nav id={styles.listacaminhos}>
-                <a href="abasocial">
-                    <p className={styles.caminholistacaminhos}>
-                        Amigos
-                    </p>
-                </a>
+
 
                 <a href="eventos">
                     <p className={styles.caminholistacaminhos}>
@@ -69,7 +65,7 @@ const index = () => {
 
                 <a href="calendario">
                     <p className={styles.caminholistacaminhos}>
-                        Calendario
+                        Calendário
                     </p>
                 </a>
 

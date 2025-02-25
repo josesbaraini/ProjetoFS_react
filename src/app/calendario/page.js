@@ -78,27 +78,27 @@ export default function Home() {
             <tbody>
                 <tr>
                     <td className={styles.coiso}>Máquina X:</td>
-                    <td className={styles.coiso}>Musculos X</td>
+                    <td className={styles.coiso}>Músculos X</td>
                 </tr>
 
                 <tr>
                     <td className={styles.coiso}>Máquina Z:</td>
-                    <td className={styles.coiso}>Musculos Z</td>
+                    <td className={styles.coiso}>Músculos Z</td>
                 </tr>
 
                 <tr>
                     <td>Máquina Y:</td>
-                    <td>Musculos Y</td>
+                    <td>Músculos Y</td>
                 </tr>
 
                 <tr>
                     <td>Máquina W:</td>
-                    <td>Musculos W</td>
+                    <td>Músculos W</td>
                 </tr>
 
                 <tr>
                     <td>Máquina P:</td>
-                    <td>Musculos P</td>
+                    <td>Músculos P</td>
                 </tr>
                 <tr >
                     <td id={styles.trespontos} colSpan="2">...</td>

@@ -81,13 +81,13 @@ export default function Home() {
         <div className={styles.photowinstdiv}>
           <div className={styles.photo}>
             {/* <img className={styles.img-photo-winst" src="."+styles../img/Stickman.png" alt="}> */}
-            <Image className={styles.imgphotowinst} src="/images/icone-sino-notificacao.jpg" alt="paia" width={100} height={100}></Image>
+            <Image className={styles.imgphotowinst} src="/images/Stickman.png" alt="paia" width={100} height={150}></Image>
 
           </div>
           <div className={styles.winst}>
 
             {/* <img className={styles.img-photo-winst" src="."+styles../img/academia.png" alt="" srcset="}> */}
-            <Image className={styles.imgphotowinst} src="/images/icone-sino-notificacao.jpg" alt="paia" width={100} height={100}></Image>
+            <Image className={styles.imgphotowinst} src="/images/20.png" alt="paia" width={100} height={100}></Image>
             <h1>Minha Sequência</h1>
           </div>
 

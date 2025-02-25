@@ -132,7 +132,7 @@ export default function Home() {
                     <div className={styles.rep_item}><p>12</p></div>
                     <div className={styles.rep_item}><p>16</p></div>
                     <div className={styles.rep_item}><p>12</p></div>
-                    <div className={styles.rep_item}><p>16.5</p></div>
+                    <div className={styles.rep_item}><p>16</p></div>
 
 
                 </div>
@@ -163,7 +163,7 @@ export default function Home() {
                     <p className={styles.item}>100Kg</p>
                 </div>
                 <div className={styles.peso}>
-                    <p className={styles.item}>100Hg</p>
+                    <p className={styles.item}>100Kg</p>
                 </div>
 
             </div>

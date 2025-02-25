@@ -19,7 +19,7 @@ export default function Home() {
     <main className={styles.mainteste}>
         <div className={styles.divtable}>
             <h1>
-                Treino de Hoje
+                Treinos da Semana
             </h1>
 
         <table className={styles.table}>

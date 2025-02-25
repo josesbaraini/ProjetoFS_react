@@ -20,12 +20,12 @@ export default function Home() {
     <div className={styles.principal}>
       <div className={styles.divcompleta}>
         <div className={styles.assunto}>
-          <p>Blablavla</p>
+          <p>Treino de XX YY marcado para Hoje</p>
 
         </div>
 
         <div className={styles.tipo}>
-          <p>Amigo</p>
+          <p>Treino</p>
 
         </div>
 
@@ -33,18 +33,18 @@ export default function Home() {
           <p>Anteontem</p>
         </div>
         <div className={styles.pessoa}>
-          <p>Fulanim</p>
+          <p>Sistema</p>
         </div>
       </div>
 
       <div className={styles.divcompleta}>
         <div className={styles.assunto}>
-          <p>Barbarossa</p>
+          <p>Sua sequência esta em 99</p>
 
         </div>
 
         <div className={styles.tipo}>
-          <p>Amigo</p>
+          <p>Treino</p>
 
         </div>
 
@@ -52,7 +52,7 @@ export default function Home() {
           <p>Anteanteanteontem</p>
         </div>
         <div className={styles.pessoa}>
-          <p>Spike</p>
+          <p>Sistema</p>
         </div>
       </div>
       <div className={styles.divcompleta}>
@@ -70,25 +70,25 @@ export default function Home() {
           <p>Hoje</p>
         </div>
         <div className={styles.pessoa}>
-          <p>Treino</p>
+          <p>Sistema</p>
         </div>
       </div>
       <div className={styles.divcompleta}>
         <div className={styles.assunto}>
-          <p>Blablavla</p>
+          <p>Bom Trabalho hoje!</p>
 
         </div>
 
         <div className={styles.tipo}>
-          <p>Amigo</p>
+          <p>Sistema</p>
 
         </div>
 
         <div className={styles.data}>
-          <p>Anteontem</p>
+          <p>5 segundos Atras</p>
         </div>
         <div className={styles.pessoa}>
-          <p>Fulanim</p>
+          <p>Sistema</p>
         </div>
       </div>
       
