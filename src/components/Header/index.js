@@ -44,7 +44,7 @@ const index = () => {
     }
     return (
         <div className={styles.header}>
-            <div id="aba-config">
+            <div id={styles.abaConfig}>
                 <Image onClick={()=>(apareceUtilits())}className={styles.headericon} src="/images/settings.png" id={styles.buttonutilidades} alt="paia" width={100} height={100}></Image>
             </div>
 

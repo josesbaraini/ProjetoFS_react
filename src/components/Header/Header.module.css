@@ -143,15 +143,20 @@
         
     }
 }
-@media only screen and (max-width : 550px){
+@media only screen and (max-width : 600px){
     .caminholistacaminhos{
         font-size: 15px;
     
         
     }
-
+    #abaConfig{
+        width: 75px;
+    }
     #icon-logo{
         display: none;
+    }
+    .imagelink{
+        width: ;
     }
 }
 

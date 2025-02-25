@@ -1,29 +1,21 @@
 /* Style destinado SOMENTE a tela de Eventos */
 
 .body{
-    background-color: var(--background);;
-    color: var(--background);
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+
 }
 .mainteste{
     background-color: var(--background);
     display: flex;
-    align-items: center;
+    align-items:normal;
+    color: var(--background);
+    height: 90vh;
     justify-content: center;
 
 }
 
-.divprincipal{
-    margin-top: 5vh;
-    width: 90vw;
-    display: flex;
-}
 
 .relocaledia{
-    width: 70%;
-    height: 100%;
+flex-grow: 2;
 
 
 }
@@ -167,7 +159,7 @@
 }
 .botaoaddevento{
     color: var(--background);;
-    background-color: rgb(65, 0, 65);
+    background-color: var(--corPrincipal);
     cursor: pointer;
     text-decoration: underline white;
     border-radius: 20px;
@@ -177,8 +169,7 @@
 }
 
 .eventos{
-    width: 30%;
-    height: 100%;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;

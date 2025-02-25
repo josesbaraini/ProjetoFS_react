@@ -41,9 +41,9 @@ useEffect(()=>{
 // Atualizar o relógio a cada segundo
 
   return (
-    <div className={styles.body}>
+
       <main className={styles.mainteste}>
-        <div className={styles.divprincipal}>
+
           <section className={styles.relocaledia}>
             <div className={styles.calendario}>
               <div className={styles.calendarioconteudo}>
@@ -125,10 +125,8 @@ useEffect(()=>{
             </div>
 
           </section>
-        </div>
       </main>
 
 
-    </div>
   );
 }
