@@ -10,24 +10,36 @@ export default function Home() {
   const [excluirMaq, setExcluirMaq] = useState(false);
   const [addMaq, setAddMaq] = useState(false);
   const [excluirUser, setExcluirUser] = useState(false)
+  const [tabelaMaq, setTabelaMaq] = useState(false);
+  const [tabelaUser, setTabelaUser] = useState(false)
+  const [users, setUsers] = useState([])
+ 
+  async function getUsers() {
 
+
+        const resposta = await fetch("https://projetofs-apis.onrender.com/api/adm/userlist") 
+        let data = await response.json();
+      
+      };
   useEffect(() => {
     console.log(usuarioId)
       if (!usuarioId) {
           roteador.push("/login");
       }
   }, [usuarioId]);
-
+  useEffect(()=>{
+    setUsers(getUsers())
+  },[tabelaUser])
   if (!usuarioId) return <p>Redirecionando...</p>;
   return (
     <div className={styles.principal}>
       <div className={styles.painel}>
-        <h1>Listar Máquinas</h1>
-        <h1>Listar Ususarios</h1>
-        <h1>Adicionar Máquina</h1>
+        <h1 >Listar Máquinas</h1>
+        <h1 onClick={()=>setTabelaUser(!tabelaUser)}>Listar Usuarios</h1>
+        <h1 onClick={()=>setAddMaq(!addMaq)}>Adicionar Máquina</h1>
       </div>
 
-      <table className={styles.tabela}>
+      { tabelaUser && <table className={styles.tabela}>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -35,20 +47,20 @@ export default function Home() {
                         <th>Telefone</th>
                         <th>Email</th>
                         <th>Cargo</th>
-                        <th>Editar</th>
+                        <th>Data de Entrada</th>
                         <th>Deletar</th>
                     </tr>
                 </thead>
                 <tbody >
-                
+                  
                     <tr>
                         <td>1</td>
                         <td>José</td>
                         <td>99 9999-8990</td>
                         <td>umemailai@gmail.com</td>
                         <td>Admin</td>
-                        <td>Editar</td>
-                        <td className={styles.x}>X</td>
+                        <td>2025-02-18 10:25:21</td>
+                        <td onClick={()=>setExcluirUser(!excluirUser)} className={styles.x}>X</td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -56,14 +68,14 @@ export default function Home() {
                         <td>99 9999-8990</td>
                         <td>outroemailai@gmail.com</td>
                         <td>Admin</td>
-                        <td>Editar</td>
+                        <td>2025-02-18 17:11:35</td>
                         <td className={styles.x}>X</td>
                     </tr>
                     
 
           
                 </tbody>
-            </table>
+            </table>}
 
       {excluirMaq && <div className={styles.excluirMaq}>
         <p>Tem certeza que deseja excluir a máquina? Digite o ID da máquina para poder excluir.</p>

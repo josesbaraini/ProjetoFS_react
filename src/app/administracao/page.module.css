@@ -16,6 +16,13 @@
 .painel h1{
     margin-bottom: 20px;
     cursor: pointer;
+
+}
+.painel h1:hover{
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: rgb(216, 216, 216);
+    
 }
 
 .excluirMaq{
@@ -35,7 +42,7 @@
 }
 
 .excluirMaq p{
-    margin: 2px;
+    margin: 8px;
 }
 .excluirMaq button{
     border: 3px solid black;
@@ -61,11 +68,12 @@
    background-color: red;
 }
 .tabela{
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     background: var(--background);
     cursor: pointer;
     height: 10%;
+    margin: 20px;
     
 }
 
@@ -81,7 +89,7 @@
     text-align: left;
 }
 .tabela tbody tr:hover{
-    background-color: var(--backhover);
+    background-color: rgb(22, 22, 22);
 
 
 }
