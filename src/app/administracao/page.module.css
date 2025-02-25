@@ -26,7 +26,16 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    position: absolute;
+    left: 50%;
 
+    top:40%
+
+
+}
+
+.excluirMaq p{
+    margin: 2px;
 }
 .excluirMaq button{
     border: 3px solid black;
@@ -42,4 +51,37 @@
 
 .botoes:last-child{
     color: red;
+}
+.x{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.x:hover{
+   background-color: red;
+}
+.tabela{
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--background);
+    cursor: pointer;
+    height: 10%;
+    
+}
+
+.tabela th{
+    background-color: var(--foreground);
+    color: var(--background);
+    border: 1px solid var(--background);
+}
+
+.tabela td{
+    border: 1px solid var(--foreground);
+    padding: 10px;
+    text-align: left;
+}
+.tabela tbody tr:hover{
+    background-color: var(--backhover);
+
+
 }
